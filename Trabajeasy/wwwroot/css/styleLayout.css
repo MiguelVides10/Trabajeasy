@@ -1,0 +1,48 @@
+﻿.contenedorLogo{
+    padding-top:14px;
+    font-size: 100px;
+}
+.logoLetra {
+    font-size:25px;
+    font-weight: 900;
+    display: flex;
+    align-content: center;
+}
+.easyLetras {
+    font-size: 25px;
+    color: #2742DE;
+}
+
+.colorPersonalizado {
+    background: #2724DE
+}
+.btn-login {
+    background-color: #5A6FED;
+    width: 125px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    margin-right: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.btn-Signup {
+    background-color: #879AF8;
+    width: 125px;
+    height: 50px;
+    border-radius: 8px;
+    border-color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-login:hover {
+    background-color: #879AF8;
+    color: black;
+}
+.btn-Signup:hover {
+    background-color: #5A6FED;
+    color: black;
+}
