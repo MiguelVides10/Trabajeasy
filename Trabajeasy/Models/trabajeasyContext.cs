@@ -7,5 +7,6 @@ namespace Trabajeasy.Models
         public trabajeasyContext(DbContextOptions<trabajeasyContext> options) : base(options)
         {
         }
+        public DbSet<publicacion> publicacions { get; set; }
     }
 }
