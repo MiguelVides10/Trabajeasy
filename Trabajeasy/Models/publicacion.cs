@@ -11,6 +11,7 @@ namespace Trabajeasy.Models
         public int? id_tipo { get; set; }
         public string? nivel { get; set; }
         public string? salario { get; set; }
+        public string? informacion { get; set; }
         public string? puesto { get; set;}
 
     }
