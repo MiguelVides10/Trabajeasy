@@ -12,5 +12,7 @@ namespace Trabajeasy.Models
         public DbSet<empresa> empresa { get; set; }
         public DbSet<empleador> empleador { get; set; }
         public DbSet<departamentos> departamentos { get; set;}
+        public DbSet<usuario> usuario { get; set; }
+        public DbSet<recurso> recurso { get; set; }
     }
 }
