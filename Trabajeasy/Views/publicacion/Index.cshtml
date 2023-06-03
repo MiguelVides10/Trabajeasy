@@ -75,37 +75,37 @@
         @{
             int i = 0;
         }
-        <div class="carousel-inner">
+        <div class="carousel-inner d-flex">
             @foreach (var recurso in (IEnumerable<dynamic>)ViewData["recursos"])
             {
                 @if (i == 1)
                 {
-                    @if (recurso.tipo == "video")
+                    @if (recurso.tipo == "Video")
                     {
-                        <div class="carousel-item active">
+                        <div class="carousel-item active justify-content-center">
                             <video src="@recurso.url" class="" alt="Video" onplay="pauseOtherVideos(this)" controls autoplay></video>
                         </div>
                     }
-                    else if (recurso.tipo == "imagen")
+                    else if (recurso.tipo == "Entrevista")
                     {
-                        <div class="carousel-item active">
-                            <img src="@recurso.url" class="d-block w-100 img-fluid" alt="Imagen">
+                        <div class="carousel-item active justify-content-center">
+                            <img src="@recurso.imagen" class="d-block w-50 img-fluid" alt="Imagen">
                         </div>
                     }
 
                 }
                 else
                 {
-                    @if (recurso.tipo == "video")
+                    @if (recurso.tipo == "Video")
                     {
-                        <div class="carousel-item">
+                        <div class="carousel-item ">
                             <video src="@recurso.url" class="" alt="Video" onplay="pauseOtherVideos(this)" controls></video>
                         </div>
                     }
-                    else if (recurso.tipo == "imagen")
+                    else if (recurso.tipo == "Entrevista")
                     {
                         <div class="carousel-item">
-                            <img src="@recurso.url" class="d-block w-100 img-fluid" alt="Imagen">
+                            <img src="@recurso.imagen" class="d-block w-50 img-fluid" alt="Imagen">
                         </div>
                     }
                     
@@ -330,6 +330,9 @@
                         <div class="vacantes-list">
                             @foreach (var publicacion in (IEnumerable<dynamic>)ViewData["datos"])
                             {
+                                <div class="logo">
+                                    <img src=@publicacion.logo>
+                                </div>
                                 <div class="vacante-item" data-aos="fade-up" data-aos-delay="100">
                                     <div class="vacante-content">
                                         <h3>@publicacion.nombre_empresa</h3>
@@ -337,7 +340,7 @@
                                         <p class="vacante-description">
                                             @publicacion.info
                                         </p>
-                                        <a href="#" class="btn btn-primary">Aplicar</a>
+                                        <a asp-action="Details" asp-route-id="@publicacion.id" class="btn btn-primary">Aplicar</a>
                                     </div>
                                 </div>
                             }

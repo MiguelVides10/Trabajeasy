@@ -1,0 +1,61 @@
+﻿.areas {
+    justify-content: space-between;
+    display: flex;
+    vertical-align: middle;
+    margin-top: 20px;
+    padding-top: 0%;
+}
+
+.color1 {
+    background: #2742de;
+}
+
+.color2 {
+    background: #4359e6;
+}
+
+.color3 {
+    background: #5a6fed;
+}
+
+.color4 {
+    background: #7084f3;
+}
+
+.cuadro {
+    background: cadetblue;
+    margin-top: 3%;
+    width: 100%;
+    height: 80%;
+    padding-top: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 2%;
+    text-align: center;
+}
+
+.color5 {
+    background: #879af8;
+}
+
+.areas {
+    justify-content: space-between;
+    display: flex;
+    vertical-align: middle;
+    margin-top: 40px;
+    padding-top: 0%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.accordion {
+    width: 500px;
+}
+
+.area11 {
+    margin-right: 15px;
+}
+
+.area12 {
+    margin-left: 15px;
+}

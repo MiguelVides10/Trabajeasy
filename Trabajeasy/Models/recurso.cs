@@ -9,5 +9,8 @@ namespace Trabajeasy.Models
         public string? tipo { get; set; }
         public string? informacion { get; set; }
         public string? url { get; set; }
+        public string? titulo { get; set; }
+        public string? imagen { get; set; }
+
     }
 }
