@@ -43,6 +43,10 @@ namespace Trabajeasy.Controllers
                                select r).ToList().Count;
             ViewData["numRecursos"] = numRecursos;
 
+            var recursos = (from r in _trabajeasyContext.recurso
+                            select r).ToList();
+            ViewData["recursos"] = recursos;
+
             return View();
         }
     }
