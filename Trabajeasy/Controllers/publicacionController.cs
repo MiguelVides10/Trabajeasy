@@ -24,6 +24,7 @@ namespace Trabajeasy.Controllers
                                 puesto = p.puesto,
                                 info = p.informacion
                             }).ToList();
+
             ViewData["datos"] = vacantes;
             return View();
         }

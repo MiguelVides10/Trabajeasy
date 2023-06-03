@@ -7,5 +7,6 @@ namespace Trabajeasy.Models
         [Key]
         public int id_empresa { get; set; }
         public string? nombre { get; set; }
+        public string? logo { get; set; }
     }
 }
